@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promos",
+  "info": {
+    "name": "promo"
+  },
+  "options": {
+    "draftAndPublish": false,
+    "timestamps": true,
+    "increments": true,
+    "comment": ""
+  },
+  "attributes": {
+    "promo_code": { "type": "string" },
+    "start_date": { "type": "date" },
+    "end_date": { "type": "date" }
+  }
+}

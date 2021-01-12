@@ -1,0 +1,20 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/test",
+      "handler": "my-plugin.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/promo",
+      "handler": "promo.index",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
