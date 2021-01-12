@@ -4,6 +4,7 @@ import DynamicDiv from '../DynamicDiv';
 import Text from '../Text';
 import { Link } from 'react-router-dom';
 import colors from '../../config/colors';
+import pluginId from '../../pluginId';
 
 const Wrapper = styled(DynamicDiv)`
   background-color: ${colors.grey1};
@@ -14,10 +15,10 @@ const SlideMenu = () => {
     <Wrapper>
       <ul>
         <li>
-          <Link to={'/'}>Promo Code</Link>
+          <Link to={`/plugins/${pluginId}`}>Promo Code</Link>
         </li>
         <li>
-          <Link to={'/2'}>Home2</Link>
+          <Link to={`/plugins/${pluginId}/campaign`}>Campaign</Link>
         </li>
       </ul>
     </Wrapper>

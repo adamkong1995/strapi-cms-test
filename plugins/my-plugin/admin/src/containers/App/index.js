@@ -15,6 +15,7 @@ import HomePage from '../HomePage';
 import SlideMenu from '../../components/SlideMenu';
 import styled from 'styled-components';
 import DynamicDiv from '../../components/DynamicDiv';
+import Campaign from '../Campaign';
 
 const Wrapper = styled(DynamicDiv)`
   height: calc(100vh - 6rem);
@@ -28,6 +29,7 @@ const App = () => {
       <SlideMenu />
       <Switch>
         <Route path={`/plugins/${pluginId}`} component={HomePage} exact />
+        <Route path={`/plugins/${pluginId}/campaign`} component={Campaign} />
         <Route component={NotFound} />
       </Switch>
     </Wrapper>
