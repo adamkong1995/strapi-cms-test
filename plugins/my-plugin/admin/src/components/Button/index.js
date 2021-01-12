@@ -15,7 +15,7 @@ const StyledButton = styled(motion.button)`
 const Button = ({ color, disabled, label, isLoading, mMarginTop, mMarginBottom, mMarginLeft, mMarginRight, onClick, ...props }) => {
   return (
     <DynamicDiv mMarginTop={mMarginTop} mMarginBottom={mMarginBottom} mMarginLeft={mMarginLeft} mMarginRight={mMarginRight}>
-      <StyledButton disabled={onClick || disabled} onClick={onClick} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} {...props}>{
+      <StyledButton disabled={isLoading || disabled} onClick={onClick} whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }} {...props}>{
         isLoading ? 
         <div>Loading</div> :
         <Text color={color}>{label}</Text>

@@ -10,7 +10,7 @@ const StyledInput = styled.input`
 const Input = props => {
 
   return (
-    <StyledInput />
+    <StyledInput {...props}/>
   );
 };
 

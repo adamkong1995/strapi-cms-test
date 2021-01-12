@@ -15,6 +15,22 @@
       "config": {
         "policies": []
       }
+    },
+    {
+      "method": "GET",
+      "path": "/campaign",
+      "handler": "campaign.index",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/campaign",
+      "handler": "campaign.create",
+      "config": {
+        "policies": []
+      }
     }
   ]
 }
